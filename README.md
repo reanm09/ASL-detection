@@ -24,6 +24,7 @@ The model is trained using the **MediaPipe Processed ASL Dataset**, available he
 ### 1. Install Requirements
 ```bash
 pip install -r requirements.txt
+```
 2. Preprocess Dataset
 run:
 ```
