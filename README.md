@@ -28,10 +28,6 @@ Edit
 
 ---
 
-## 📂 Project Structure
-
-. ├── main.py # Preprocesses dataset and saves it as .npz ├── test.py # Trains CNN and saves model as .h5 ├── detect_asl.py # Real-time detection with optional Arduino support ├── requirements.txt # Project dependencies ├── .gitignore # Ignore files for version control └── README.md # Project documentation
-
 yaml
 Copy
 Edit
