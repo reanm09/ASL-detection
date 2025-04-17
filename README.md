@@ -17,21 +17,6 @@ This project implements an American Sign Language (ASL) recognition system using
 The model is trained using the **MediaPipe Processed ASL Dataset**, available here:  
 🔗 [Kaggle Dataset Link](https://www.kaggle.com/datasets/vignonantoine/mediapipe-processed-asl-dataset/discussion/367326)
 
-Dataset contains labeled grayscale images of ASL hand signs processed using MediaPipe, organized by class folders.
-
-Example structure:
-dataset/ ├── A/ │ ├── img1.jpg │ └── ... ├── B/ │ └── ... ...
-
-yaml
-Copy
-Edit
-
----
-
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ How to Run
@@ -40,24 +25,20 @@ Edit
 ```bash
 pip install -r requirements.txt
 2. Preprocess Dataset
-Ensure your dataset is structured as shown above, then run:
-
-bash
-Copy
-Edit
+run:
+```
 python main.py
+```
 3. Train the Model
-bash
-Copy
-Edit
+```
 python test.py
+```
 This will generate asl_sign_model.h5.
 
 4. Start Real-Time Detection
-bash
-Copy
-Edit
+```
 python detect_asl.py
+```
 Arduino is optional and used for physical feedback. Detection works with or without it.
 
 🛠 Arduino Integration (Optional)
@@ -66,6 +47,3 @@ If an Arduino is connected (default port: COM4):
 b'1' is sent when a sign is confidently detected.
 
 b'0' is sent when the prediction is uncertain.
-
-🧾 License
-For academic and personal research use.
